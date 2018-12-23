@@ -1,5 +1,7 @@
 package com.seayon.chapter02;
 
+import java.util.Date;
+
 /**
  * @Version 1.0
  * @author: 赵旭阳
@@ -8,10 +10,10 @@ package com.seayon.chapter02;
  */
 public class P4_DataOnly {
 	public static void main(String[] args){
-		class ATypeName {
-				int i;
-				double d;
-				boolean b;
+		class DataOnly{
+			int i;
+			double d;
+			boolean b;
 
 			void show() {
 				System.out.println(i);
@@ -19,13 +21,10 @@ public class P4_DataOnly {
 				System.out.println(b);
 			}
 		}
-		ATypeName aTypeName = new ATypeName();
-		aTypeName.i = 3;
-		aTypeName.b = false;
-		aTypeName.d = 3.333;
-		aTypeName.show();
-
+		DataOnly dataOnly = new DataOnly();
+		dataOnly.i = 1;
+		dataOnly.d = 1.11;
+		dataOnly.b = false;
+		dataOnly.show();
 	}
-
-
 }
