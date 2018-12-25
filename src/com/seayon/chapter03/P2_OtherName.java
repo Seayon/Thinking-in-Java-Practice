@@ -44,10 +44,27 @@ public class P2_OtherName {
 		Dog dog3 = new Dog();
 
 		dog3 = spot;
-
-		System.out.println(spot == dog3);
-		System.out.println(spot.equals(dog3));
+		//System.out.println(false||true);
+		//System.out.println(spot == dog3);
+		//System.out.println(spot.equals(dog3));
+		System.out.println(test1()|| test2() || test3());
 	}
+
+	public static boolean test1() {
+		System.out.println("test1");
+		return true;
+	}
+
+	public static boolean test2() {
+		System.out.println("test2");
+		return false;
+	}
+
+	public static boolean test3() {
+		System.out.println("test3");
+		return true;
+	}
+
 
 	public static void f(Tank tank) {
 		tank.score = 2.1f;
