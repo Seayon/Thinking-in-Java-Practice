@@ -57,6 +57,25 @@ public class IfElse {
 		}
 	}
 
+	/**
+	 * 打印素数
+	 */
+
+	@Test
+	public void test4() {
+		for (int i = 2; i < 10000; i++) {
+			boolean flag = true;
+			for (int j = 2; j < i; j++) {
+				if (i % j ==0) {
+					flag = false;
+				}
+			}
+			if (flag) {
+				System.out.println("素数："+i);
+			}
+		}
+	}
+
 
 	
 }
