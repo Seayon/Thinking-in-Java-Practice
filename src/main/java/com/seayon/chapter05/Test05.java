@@ -105,15 +105,26 @@ public class Test05 {
 
     @Test
     public void testArgs() {
-        VarargType.f('a');
-        VarargType.f();
-        VarargType.g(1);
-        VarargType.g();
+//        VarargType.f('a');
+//        VarargType.f();
+//        VarargType.g(1);
+//        VarargType.g();
     }
    @Test
    public void testCompileTimeError() {
 
    }
 
+   @Test
+   public void testEnum() {
+       for (Spiciness value : Spiciness.values()) {
+           System.out.println("value = " + value);
+           System.out.println("value.ordinal() = " + value.ordinal());
+       }
+
+       Burrito
+               plain = new Burrito(Spiciness.FLAMING),
+               greenChile = new Burrito(Spiciness.FLAMING);
+   }
 
 }
