@@ -6,4 +6,8 @@ public class A {
     public A(String name) {
         print("A constructor" + name);
     }
+
+	public void doh() {
+
+	}
 }
