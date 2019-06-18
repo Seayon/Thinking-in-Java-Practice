@@ -10,4 +10,8 @@ public class A {
 	public void doh() {
 
 	}
+
+	public void dob() {
+		System.out.println("dob");
+	}
 }

@@ -5,6 +5,8 @@ import org.junit.Test;
 public class TestBacis {
    @Test
    public void testi() {
-       Drawing drawing = new Drawing();
+	   C c = new C("name");
+	   c.doh();
+	   c.dob();
    }
 }
