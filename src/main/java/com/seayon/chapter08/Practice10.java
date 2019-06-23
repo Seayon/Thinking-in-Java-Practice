@@ -29,5 +29,11 @@ public class Practice10 {
 
     }
 
-
+    @Test
+    public void testMinus() {
+        int i = 1;
+        System.out.println((i--));
+        System.out.println((i));
+        System.out.println(--i);
+    }
 }
