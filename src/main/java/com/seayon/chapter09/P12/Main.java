@@ -28,5 +28,11 @@ public class Main {
         v(h); // Treat it as a CanFly
         c(h); // Treat it as a CanClimb
         w(h); // Treat it as an ActionCharacter*/
+        int i = 1;
+        System.out.println(++i != 1);
+        System.out.println(i);
+        System.out.println(i++);
+        System.out.println(++i);
+
     }
 }
