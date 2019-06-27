@@ -7,12 +7,18 @@ public class Outer {
     }
 
     class Inner {
+        class InnerInner{
 
+        }
+
+        public InnerInner getInnerInner() {
+            return new InnerInner();
+        }
     }
 
     public static void main(String args[]){
         Outer outer = new Outer();
-        Inner iner = outer.getIner();
-        System.out.println(iner.hashCode());
+        Inner.InnerInner innerInner = outer.getIner().getInnerInner();
+        System.out.println(innerInner.hashCode());
     }
 }
