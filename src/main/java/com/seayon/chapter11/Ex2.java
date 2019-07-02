@@ -14,6 +14,6 @@ public class Ex2 {
         for (Integer i : c) {
             System.out.print(i + ",");
         }
-        ;
+
     }
 }
