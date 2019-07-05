@@ -20,7 +20,7 @@ public class C {
     }
 
 
-    public B2 get(String param) {
+    public B2 get(final String param) {
         return new B2() {
             private String desc = param;
 
