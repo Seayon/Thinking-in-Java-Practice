@@ -26,9 +26,9 @@ public class Ex25 {
         while (iterator.hasNext()) {
 
             String next = iterator.next();
-            ArrayList<Integer> integers = stringArrayListHashMap.get(next) == null ? new ArrayList<>() : stringArrayListHashMap.get(next);
-            integers.add(i);
-            stringArrayListHashMap.put(next, integers);
+            //ArrayList<Integer> integers = stringArrayListHashMap.get(next) == null ? new ArrayList<>() : stringArrayListHashMap.get(next);
+            //integers.add(i);
+            //stringArrayListHashMap.put(next, integers);
             counter.put(next, counter.get(next) == null ? 1 : counter.get(next)+1);
             i++;
         }
