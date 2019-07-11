@@ -35,18 +35,22 @@ class MyEx3 extends Exception {
 public class Ex9 {
     public static void main(String[] args) {
         try {
-            if (true) {
-                throw new MyEx1("this is MyEx1");
-            }
-            if (true) {
-                throw new MyEx2("this is MyEx2");
-            }
-            if (true) {
-                throw new MyEx3("this is MyEx3");
-            }
+//            if (true) {
+//                throw new MyEx1("this is MyEx1");
+//            }
+//            if (true) {
+//                throw new MyEx2("this is MyEx2");
+//            }
+//            if (true) {
+//                throw new MyEx3("this is MyEx3");
+//            }
+            args = null;
+            System.out.println("args.length = " + args.length);
         } catch (Exception e) {
             System.out.println("Cause exception");
             e.printStackTrace(System.out);
+        }finally {
+            System.out.println("This is finally");
         }
 
 
