@@ -6,7 +6,7 @@ package com.seayon.chapter12;
  * @Date: 2019/7/8 14:29
  * @Description
  */
-public class MyEx extends Exception {
+public class MyEx extends RuntimeException {
 	private String msg;
 
 	public MyEx(String msg) {
