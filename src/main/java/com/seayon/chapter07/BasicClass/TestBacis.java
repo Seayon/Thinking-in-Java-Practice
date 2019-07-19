@@ -8,5 +8,10 @@ public class TestBacis {
 	   C c = new C("name");
 	   c.doh();
 	   c.dob();
+	   try {
+		   Class.forName("com.seayon.chapter07.BasicClass.TestBacis");
+	   } catch (ClassNotFoundException e) {
+		   e.printStackTrace();
+	   }
    }
 }
