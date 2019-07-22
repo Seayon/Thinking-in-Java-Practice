@@ -28,5 +28,8 @@ public class Ex1 {
         String mango = "mango";
         String s = "abc" + mango + "def" + 47;
         System.out.println(s);
+        boolean b1 = false;
+        boolean b2 = false;
+        System.out.println(b1 && b2);
     }
 }
