@@ -26,7 +26,7 @@ public class LinkedStack5<T> {
 		boolean end() { return item == null && next == null; }
 	}
 	private Node top = new Node(); // End sentinel
-	public void push(T item) {
+	 public void push(T item) {
 		top = new Node(item, top);
 	}
 	public T pop() {
