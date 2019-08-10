@@ -10,18 +10,6 @@ import static jdk.nashorn.internal.objects.Global.println;
 import static net.mindview.util.Print.print;
 
 
-class RandomRodentGenerator {
-	private Random rand = new Random();
-	public Rodent next() {
-		switch(rand.nextInt(3)) {
-			default:
-			case 0: return new Mouse();
-			case 1: return new Rat();
-			case 2: return new Squirrel();
-		}
-	}
-}
-
 class Rodent {
 	private String name = "Rodent";
 	protected void eat() { println("Rodent.eat()"); }
