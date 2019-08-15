@@ -23,6 +23,13 @@ class FancyToy extends Toy
 
 public class ToyTest1 {
 
+	public ToyTest1() {
+
+	}
+
+	public ToyTest1(int i) {
+		System.out.println("cast = " + i);
+	}
 	private static Object cast;
 
 	static void printInfo(Class cc) {
