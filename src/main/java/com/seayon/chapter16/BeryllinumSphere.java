@@ -1,21 +1,26 @@
 package com.seayon.chapter16;
 
 
+import java.util.StringJoiner;
+
 public class BeryllinumSphere {
-    private String name;
+    private static int count = 0;
+    private int number;
 
     public BeryllinumSphere() {
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+        count++;
+        this.number = count;
     }
 
     public BeryllinumSphere(String name) {
-        this.name = name;
+        this.number = count;
+        count++;
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", BeryllinumSphere.class.getSimpleName() + "[", "]")
+                .add("number=" + number)
+                .toString();
     }
 }

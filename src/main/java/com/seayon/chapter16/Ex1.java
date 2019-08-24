@@ -12,7 +12,7 @@ public class Ex1 {
         BeryllinumSphere[] c = {new BeryllinumSphere("a"), new BeryllinumSphere("b")};//普通的聚集初始化的语法创建
 //        a = {new BeryllinumSphere()};  //聚集初始化必须在定义的位置用,上述 c这里这种写法行不通
         a = new BeryllinumSphere[]{new BeryllinumSphere()};
-//        动态的聚集初始化索引,不受必须在定义时使用的限制,不管是在定义时使用还是定义以后再用都可以
+//        动态的聚集初始化,不受必须在定义时使用的限制,不管是在定义时使用还是定义以后再用都可以
         BeryllinumSphere[] e = new BeryllinumSphere[]{new BeryllinumSphere()};
         a = new BeryllinumSphere[]{new BeryllinumSphere(), new BeryllinumSphere()};
         System.out.println("a.length = " + a.length);
