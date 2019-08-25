@@ -22,7 +22,6 @@ public class Ex7 {
 
     @Test
     public void testi() {
-        System.out.println(Arrays.deepToString(testTwo(1, 2, 3)));
         System.out.println(Arrays.deepToString(testTwo(2, 4, 3)));
     }
 }
