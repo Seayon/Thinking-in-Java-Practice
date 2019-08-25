@@ -6,15 +6,15 @@ import java.util.Arrays;
 
 public class Ex1 {
     public static void main(String[] args) {
-        BeryllinumSphere[] a;
-        BeryllinumSphere[] b = new BeryllinumSphere[5];
-        BeryllinumSphere[] d = {};
-        BeryllinumSphere[] c = {new BeryllinumSphere("a"), new BeryllinumSphere("b")};//普通的聚集初始化的语法创建
-//        a = {new BeryllinumSphere()};  //聚集初始化必须在定义的位置用,上述 c这里这种写法行不通
-        a = new BeryllinumSphere[]{new BeryllinumSphere()};
+        BerylliumSphere[] a;
+        BerylliumSphere[] b = new BerylliumSphere[5];
+        BerylliumSphere[] d = {};
+        BerylliumSphere[] c = {new BerylliumSphere("a"), new BerylliumSphere("b")};//普通的聚集初始化的语法创建
+//        a = {new BerylliumSphere()};  //聚集初始化必须在定义的位置用,上述 c这里这种写法行不通
+        a = new BerylliumSphere[]{new BerylliumSphere()};
 //        动态的聚集初始化,不受必须在定义时使用的限制,不管是在定义时使用还是定义以后再用都可以
-        BeryllinumSphere[] e = new BeryllinumSphere[]{new BeryllinumSphere()};
-        a = new BeryllinumSphere[]{new BeryllinumSphere(), new BeryllinumSphere()};
+        BerylliumSphere[] e = new BerylliumSphere[]{new BerylliumSphere()};
+        a = new BerylliumSphere[]{new BerylliumSphere(), new BerylliumSphere()};
         System.out.println("a.length = " + a.length);
         char[] o = new char[29];
         System.out.println("o[1] = " + o[1]);
@@ -26,18 +26,19 @@ public class Ex1 {
 
     @Test
     public void testArrayIn() {
-        arrayIn(new BeryllinumSphere[]{new BeryllinumSphere(), new BeryllinumSphere(), new BeryllinumSphere()});
-        arrayIn(new BeryllinumSphere[4]);
-        BeryllinumSphere[] beryllinumSpheres = new BeryllinumSphere[5];
-        arrayIn(beryllinumSpheres);
-//        arrayIn({new BeryllinumSphere(),new BeryllinumSphere()});
+        arrayIn(new BerylliumSphere[]{new BerylliumSphere(), new BerylliumSphere(), new BerylliumSphere()});
+        arrayIn(new BerylliumSphere[4]);
+        BerylliumSphere[] berylliumSpheres = new BerylliumSphere[5];
+        arrayIn(berylliumSpheres);
+//        arrayIn({new BerylliumSphere(),new BerylliumSphere()});
         arrayIn(new int[3]);
         arrayIn(new int[]{1,2,3,4,5,6,});
         arrayIn(new Character[]{'1','2'});
     }
-    public void arrayIn(BeryllinumSphere[] beryllinumSpheres) {
-        System.out.println(beryllinumSpheres.length);
-        System.out.println(Arrays.toString(beryllinumSpheres));
+
+    public void arrayIn(BerylliumSphere[] berylliumSpheres) {
+        System.out.println(berylliumSpheres.length);
+        System.out.println(Arrays.toString(berylliumSpheres));
     }
 
     public void arrayIn(int[] a) {

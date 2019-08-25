@@ -6,18 +6,18 @@ import java.util.Arrays;
 
 public class Ex7 {
 
-    public BeryllinumSphere[][][] testTwo(int size1,int size2,int size3) {
+    public BerylliumSphere[][][] testTwo(int size1, int size2, int size3) {
 
-        BeryllinumSphere[][][] beryllinumSpheres = new BeryllinumSphere[size1][size2][size3];
-        for (int i = 0; i < beryllinumSpheres.length; i++) {
-            BeryllinumSphere[][] beryllinumSphere = beryllinumSpheres[i];
-            for (int j = 0; j < beryllinumSphere.length; j++) {
-                for (int k = 0; k < beryllinumSpheres[i][j].length; k++) {
-                    beryllinumSpheres[i][j][k] = new BeryllinumSphere();
+        BerylliumSphere[][][] berylliumSpheres = new BerylliumSphere[size1][size2][size3];
+        for (int i = 0; i < berylliumSpheres.length; i++) {
+            BerylliumSphere[][] berylliumSphere = berylliumSpheres[i];
+            for (int j = 0; j < berylliumSphere.length; j++) {
+                for (int k = 0; k < berylliumSpheres[i][j].length; k++) {
+                    berylliumSpheres[i][j][k] = new BerylliumSphere();
                 }
             }
         }
-        return beryllinumSpheres;
+        return berylliumSpheres;
     }
 
     @Test

@@ -5,12 +5,12 @@ import org.junit.Test;
 import java.util.Arrays;
 
 public class Ex2 {
-    public BeryllinumSphere[] arrayReturn(int i) {
-        BeryllinumSphere[] beryllinumSpheres = new BeryllinumSphere[i];
-        for (int j = 0; j < beryllinumSpheres.length; j++) {
-            beryllinumSpheres[j] = new BeryllinumSphere();
+    public BerylliumSphere[] arrayReturn(int i) {
+        BerylliumSphere[] berylliumSpheres = new BerylliumSphere[i];
+        for (int j = 0; j < berylliumSpheres.length; j++) {
+            berylliumSpheres[j] = new BerylliumSphere();
         }
-        return beryllinumSpheres;
+        return berylliumSpheres;
     }
 
     @Test

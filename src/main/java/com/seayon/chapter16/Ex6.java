@@ -6,21 +6,21 @@ import java.util.Arrays;
 
 public class Ex6 {
 
-    public BeryllinumSphere[][] testTwo(int size1,int size2) {
+    public BerylliumSphere[][] testTwo(int size1, int size2) {
 
-        BeryllinumSphere[][] beryllinumSpheres = new BeryllinumSphere[size1][size2];
-        for (int i = 0; i < beryllinumSpheres.length; i++) {
-            BeryllinumSphere[] beryllinumSphere = beryllinumSpheres[i];
-            for (int j = 0; j < beryllinumSphere.length; j++) {
-                beryllinumSpheres[i][j] = new BeryllinumSphere();
+        BerylliumSphere[][] berylliumSpheres = new BerylliumSphere[size1][size2];
+        for (int i = 0; i < berylliumSpheres.length; i++) {
+            BerylliumSphere[] berylliumSphere = berylliumSpheres[i];
+            for (int j = 0; j < berylliumSphere.length; j++) {
+                berylliumSpheres[i][j] = new BerylliumSphere();
             }
         }
-        return beryllinumSpheres;
+        return berylliumSpheres;
     }
 
     @Test
     public void testi() {
-        BeryllinumSphere[][] beryllinumSpheres = testTwo(2, 3);
-        System.out.println(Arrays.deepToString(beryllinumSpheres));
+        BerylliumSphere[][] berylliumSpheres = testTwo(2, 3);
+        System.out.println(Arrays.deepToString(berylliumSpheres));
     }
 }
