@@ -33,7 +33,9 @@ public class Ex25 {
         ex25c1.f2(ex25c1);
 //        List<Fruit> fruits = new ArrayList<Apple>();
         List<? extends Fruit> fruits = new ArrayList<Apple>();
-//        fruits.add(new Apple()); doesn't work
+        Fruit fruit = fruits.get(0);
+        System.out.println("fruit = " + fruit);
+//        fruits.add(new Apple()); //doesn't work
 // 显示器接口
     }
 
