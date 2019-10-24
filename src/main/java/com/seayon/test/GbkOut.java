@@ -2,12 +2,12 @@ package com.seayon.test;
 
 /**
  * @Version 1.0
- * @author: ÕÔĞñÑô
+ * @author: èµµæ—­é˜³
  * @Date: 2018/12/23 14:58
  * @Description
  */
 public class GbkOut {
 	public void out(){
-		System.out.println("ÎÒÊÇÖĞÎÄGBK±àÂëµÄJavaÎÄ¼ş");
+		System.out.println("æˆ‘æ˜¯ä¸­æ–‡GBKç¼–ç çš„Javaæ–‡ä»¶");
 	}
 }
