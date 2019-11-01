@@ -6,13 +6,12 @@ import java.util.Arrays;
 
 public class SortedDirList {
     public static void main(String[] args) {
+        System.out.println(System.getProperty("file.encoding"));
         File path = new File(".");
         String[] list;
         if (args.length == 0) {
             list = path.list();
         } else {
-
-
 
 //              java 8 lambda 表达式写法
             list = path.list((dir, name) -> name.matches("\\w.*\\.java"));
