@@ -1,10 +1,13 @@
 package com.seayon.chapter18;
 
+import org.junit.Test;
+
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.Arrays;
 
 public class SortedDirList {
+    @Test
     public static void main(String[] args) {
         System.out.println(System.getProperty("file.encoding"));
         File path = new File(".");
