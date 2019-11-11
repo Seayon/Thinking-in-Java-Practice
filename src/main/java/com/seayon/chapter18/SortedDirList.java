@@ -32,6 +32,7 @@ public class SortedDirList {
         Arrays.sort(list, String.CASE_INSENSITIVE_ORDER);
         for (String s : list) {
             System.out.println("s = " + s);
+            Thread.yield();
         }
     }
 }
